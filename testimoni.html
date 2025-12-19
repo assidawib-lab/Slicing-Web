@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Testimoni Pelanggan</title>
+</head>
+<body class="bg-gray-50">
+
+<!-- HEADER -->
+<header class="p-6 md:p-10 text-center text-2xl md:text-[40px] font-bold text-white bg-[linear-gradient(to_right,#ff1d6f,#c14199,#5c7ecb,#00c6ff)]">
+    Testimoni Pelanggan
+</header>
+
+<!-- NAVBAR -->
+<nav class="w-full bg-white shadow">
+    <ul class="flex justify-center gap-5 md:gap-10 p-4 md:p-5 font-semibold text-sm md:text-base text-blue-500">
+        <li><a href="beranda.html" class="hover:text-pink-500">Beranda</a></li>
+        <li><a href="tentang.html" class="hover:text-pink-500">Tentang</a></li>
+        <li><a href="testimoni.html" class="hover:text-pink-500">Testimoni</a></li> 
+        <li><a href="kontak.html" class="hover:text-pink-500">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="relative w-full h-[250px] md:h-[450px]">
+    <img src="/img/mi-gacoan.jpeg" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+        <h1 class="text-2xl md:text-5xl font-extrabold drop-shadow-lg">Apa Kata Mereka?</h1>
+        <p class="text-sm md:text-lg mt-2 drop-shadow-md">
+            Pengalaman nyata dari pelanggan setia Mie Gacoan
+        </p>
+    </div>
+</section>
+
+<!-- COUNTER -->
+<section class="w-full py-14 md:py-20 bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white px-4">
+        <div>
+            <h2 class="text-3xl md:text-5xl font-extrabold counter" data-target="10000">0</h2>
+            <p class="mt-2 text-sm md:text-lg">Pelanggan Puas</p>
+        </div>
+        <div>
+            <h2 class="text-3xl md:text-5xl font-extrabold counter" data-target="48">0</h2>
+            <p class="mt-2 text-sm md:text-lg">Rating Rata-rata</p>
+        </div>
+        <div>
+            <h2 class="text-3xl md:text-5xl font-extrabold counter" data-target="50">0</h2>
+            <p class="mt-2 text-sm md:text-lg">Outlet</p>
+        </div>
+        <div>
+            <h2 class="text-3xl md:text-5xl font-extrabold counter" data-target="99">0</h2>
+            <p class="mt-2 text-sm md:text-lg">Kepuasan</p>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+        const target = +counter.dataset.target;
+        let count = 0;
+        const update = () => {
+            if (count < target) {
+                count += Math.ceil(target / 100);
+                counter.innerText = count;
+                setTimeout(update, 20);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        update();
+    });
+});
+</script>
+
+<!-- TESTIMONI -->
+<h1 class="text-center text-pink-600 font-black p-6 md:p-10 text-2xl md:text-4xl">
+    Testimoni Pelanggan
+</h1>
+
+<section class="bg-white px-6 pb-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="md:col-span-2 border-2 border-pink-500 rounded-3xl p-8 bg-gradient-to-br from-pink-50 to-blue-50">
+            <p class="italic text-gray-700 text-base md:text-lg">
+                Mie Gacoan benar-benar mengubah persepsi saya tentang mie pedas!
+                Sudah 2 tahun jadi pelanggan setia dan tidak pernah kecewa.
+            </p>
+            <div class="flex items-center gap-4 mt-6">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-blue-400 flex items-center justify-center text-white font-bold">R</div>
+                <div>
+                    <h4 class="text-cyan-500 font-semibold">Rina Sari</h4>
+                    <div class="text-yellow-400">★★★★★</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-lg p-8">
+            <p class="italic text-gray-700">
+                Menu bervariasi dan murah meriah. Mie Iblis favorit saya!
+            </p>
+            <div class="flex items-center gap-4 mt-6">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-blue-400 flex items-center justify-center text-white font-bold">D</div>
+                <div>
+                    <h4 class="text-cyan-500 font-semibold">Dimas</h4>
+                    <div class="text-yellow-400">★★★★★</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-lg p-8">
+            <p class="italic text-gray-700">
+                Pedasnya mantap, tidak bikin sakit perut. Recommended!
+            </p>
+            <div class="flex items-center gap-4 mt-6">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-blue-400 flex items-center justify-center text-white font-bold">A</div>
+                <div>
+                    <h4 class="text-cyan-500 font-semibold">Andi</h4>
+                    <div class="text-yellow-400">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<h1 class="text-center text-pink-600 font-black p-6 md:p-10 text-2xl md:text-4xl">
+    Video Testimoni
+</h1>
+
+<section class="px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border-2 rounded-xl shadow-xl">
+            <div class="h-40 bg-gradient-to-r from-pink-500 to-blue-400 flex items-center justify-center text-4xl">▶️</div>
+            <div class="p-4">
+                <h2 class="text-blue-500 font-bold">Challenge Level 8</h2>
+                <p class="text-gray-600 text-sm">Tantangan mie pedas tertinggi</p>
+            </div>
+        </div>
+
+        <div class="border-2 rounded-xl shadow-xl">
+            <div class="h-40 bg-gradient-to-r from-pink-500 to-blue-400 flex items-center justify-center text-4xl">▶️</div>
+            <div class="p-4">
+                <h2 class="text-blue-500 font-bold">Review Menu</h2>
+                <p class="text-gray-600 text-sm">Ulasan menu favorit</p>
+            </div>
+        </div>
+
+        <div class="border-2 rounded-xl shadow-xl">
+            <div class="h-40 bg-gradient-to-r from-pink-500 to-blue-400 flex items-center justify-center text-4xl">▶️</div>
+            <div class="p-4">
+                <h2 class="text-blue-500 font-bold">Suasana Resto</h2>
+                <p class="text-gray-600 text-sm">Tempat nongkrong asyik</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORM -->
+<h1 class="text-center text-pink-600 font-black p-6 md:p-10 text-2xl md:text-4xl">
+    Berikan Testimoni Anda
+</h1>
+
+<div class="max-w-4xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow">
+    <form class="space-y-5">
+        <input class="w-full border-2 rounded-xl px-4 py-3" placeholder="Nama Lengkap">
+        <input class="w-full border-2 rounded-xl px-4 py-3" placeholder="Email">
+        <input class="w-full border-2 rounded-xl px-4 py-3" placeholder="Kota Asal">
+        <textarea rows="4" class="w-full border-2 rounded-xl px-4 py-3" placeholder="Testimoni Anda"></textarea>
+        <button type="submit" class="bg-pink-500 text-white px-8 py-3 rounded-xl hover:bg-pink-600 transition">
+            Kirim Testimoni
+        </button>
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white text-center text-sm md:text-base py-10 mt-16">
+    © 2025 Mie Gacoan Bantul. Desain & Kode oleh Tim Web.
+</footer>
+
+</body>
+</html>

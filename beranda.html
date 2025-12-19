@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mie Gacoan Bantul</title>
+</head>
+<body class="bg-gray-50">
+
+<!-- HEADER -->
+<header class="p-6 md:p-10 text-center text-2xl md:text-[40px] font-bold text-white bg-[linear-gradient(to_right,#ff1d6f,#c14199,#5c7ecb,#00c6ff)]">
+    Selamat Datang di Mie Gacoan cabang Bantul
+</header>
+
+<!-- NAVBAR -->
+<nav class="w-full bg-white shadow">
+    <ul class="flex justify-center gap-5 md:gap-10 p-4 md:p-5 font-semibold text-sm md:text-base text-blue-500">
+        <li><a href="beranda.html" class="hover:text-pink-500">Beranda</a></li>
+        <li><a href="tentang.html" class="hover:text-pink-500">Tentang</a></li>
+        <li><a href="testimoni.html" class="hover:text-pink-500">Testimoni</a></li> 
+        <li><a href="kontak.html" class="hover:text-pink-500">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- CAROUSEL -->
+<div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl mt-6">
+    <div id="carousel" class="flex w-full transition-transform duration-500">
+
+        <!-- SLIDE 1 -->
+        <section class="relative w-full h-[250px] md:h-[450px] flex-shrink-0">
+            <img src="/img/toko.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                <h1 class="text-2xl md:text-5xl font-extrabold drop-shadow-lg">Promo Spesial!</h1>
+                <p class="text-sm md:text-lg mt-2 drop-shadow-md">
+                    Nikmati diskon 20% untuk semua menu favorit Anda
+                </p>
+            </div>
+        </section>
+
+        <!-- SLIDE 2 -->
+        <section class="relative w-full h-[250px] md:h-[450px] flex-shrink-0">
+            <img src="/img/menu.jpg" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                <h1 class="text-2xl md:text-4xl font-bold drop-shadow-lg">Tempat Nongkrong Terbaik</h1>
+                <p class="text-sm md:text-lg mt-2 drop-shadow-md">
+                    Suasana nyaman untuk ngumpul bersama teman-teman
+                </p>
+            </div>
+        </section>
+
+        <!-- SLIDE 3 -->
+        <section class="relative w-full h-[250px] md:h-[450px] flex-shrink-0">
+            <img src="/img/mi-gacoan.jpeg" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                <h1 class="text-2xl md:text-4xl font-bold drop-shadow-lg">Mie Setan Level 8</h1>
+                <p class="text-sm md:text-lg mt-2 drop-shadow-md">
+                    Berani coba level tertinggi? Buktikan kehebatanmu!
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- BUTTON -->
+    <button id="prev" class="absolute top-1/2 left-3 -translate-y-1/2 bg-white/70 px-3 py-1 rounded-full">‹</button>
+    <button id="next" class="absolute top-1/2 right-3 -translate-y-1/2 bg-white/70 px-3 py-1 rounded-full">›</button>
+</div>
+
+<!-- SCRIPT CAROUSEL -->
+<script>
+const carousel = document.getElementById("carousel");
+const slides = carousel.children.length;
+let index = 0;
+
+document.getElementById("next").onclick = () => {
+    index = (index + 1) % slides;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+};
+
+document.getElementById("prev").onclick = () => {
+    index = (index - 1 + slides) % slides;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+};
+
+setInterval(() => {
+    index = (index + 1) % slides;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+}, 4000);
+</script>
+
+<!-- MENGAPA -->
+<section class="bg-white mt-10">
+    <h1 class="text-center text-pink-600 font-black p-6 md:p-10 text-2xl md:text-4xl">
+        Mengapa Mie Gacoan?
+    </h1>
+    <p class="text-center text-base md:text-xl font-normal px-4">
+        Mie Gacoan adalah destinasi kuliner terbaik untuk pecinta mie pedas.<br class="hidden md:block">
+        Cita rasa autentik, harga terjangkau, dan suasana nyaman.
+    </p>
+</section>
+
+<!-- CARD -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 px-6 mt-10">
+    <div class="text-center space-y-6 border-2 rounded-xl p-10 shadow-xl hover:scale-105 transition">
+        <span class="text-4xl">🌶️</span>
+        <h2 class="text-xl text-blue-500 font-bold">Rasa Pedas Autentik</h2>
+        <p class="text-gray-600">Level pedas 1–8 sesuai selera Anda</p>
+    </div>
+
+    <div class="text-center space-y-6 border-2 rounded-xl p-10 shadow-xl hover:scale-105 transition">
+        <span class="text-4xl">💰</span>
+        <h2 class="text-xl text-blue-500 font-bold">Harga Terjangkau</h2>
+        <p class="text-gray-600">Rasa premium dengan harga ramah</p>
+    </div>
+
+    <div class="text-center space-y-6 border-2 rounded-xl p-10 shadow-xl hover:scale-105 transition">
+        <span class="text-4xl">🏠</span>
+        <h2 class="text-xl text-blue-500 font-bold">Suasana Nyaman</h2>
+        <p class="text-gray-600">Tempat nongkrong favorit bersama teman</p>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="p-6 md:p-10 text-center text-white mt-10 bg-[linear-gradient(to_right,#ff1d6f,#c14199,#5c7ecb,#00c6ff)]">
+    <h1 class="text-xl md:text-2xl font-extrabold">Siap Merasakan Sensasi Pedas?</h1>
+    <p class="pt-2 text-sm md:text-lg">
+        Kunjungi cabang terdekat dan rasakan pengalaman tak terlupakan
+    </p>
+    <button type="button" class="mt-4 px-6 py-2 rounded-full bg-white text-pink-500 font-bold hover:bg-pink-500 hover:text-white transition">
+        Hubungi Kami
+    </button>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white text-center text-sm md:text-base pt-8 pb-8">
+    © 2025 Mie Gacoan Bantul. Desain & Kode oleh Tim Web.
+</footer>
+
+</body>
+</html>

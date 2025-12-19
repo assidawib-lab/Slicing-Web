@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="p-10 0 text-center text-[40px] font-bold text-white bg-[linear-gradient(to_right,#ff1d6f,#c14199,#5c7ecb,#00c6ff)]">
+        Hubungi Kami
+    </header>
+    <nav class="w-full bg-white">
+        <ul class="flex justify-center gap-10 p-5 font-semibold text-blue-500">
+            <li><a href="beranda.html" class="hover:text-pink-500">Beranda</a></li>
+            <li><a href="tentang.html" class="hover:text-pink-500">Tentang</a></li>
+            <li><a href="testimoni.html" class="hover:text-pink-500">Testimoni</a></li> 
+            <li><a href="kontak.html" class="hover:text-pink-500">Kontak</a></li>
+        </ul>
+    </nav>
+    <section class="relative w-full h-[450px] flex-shrink-0">
+        <img src="/img/minuman.png" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+            <h1 class="text-5xl font-extrabold drop-shadow-lg">Mari Terhubung</h1>
+            <p class="text-lg mt-2 drop-shadow-md">Kami siap melayani Anda dengan sepenuh hati</p>
+        </div>
+    </section>
+
+    <h1 class="text-center text-pink-600 font-black p-10 text-4xl">Informasi Kontak</h1>
+
+    <div class="flex flex-col lg:flex-row gap-20 items-start">
+        <div class="border-2 rounded-xl p-12 shadow-xl m-5 space-y-4">
+            <div class="flex items-start gap-4 bg-gray-100 rounded-xl p-5">
+                <div class="w-10 h-10 font-bold flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 flex-shrink-0">
+                    📍
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-blue-500">Alamat</h1>
+                    <p>
+                        Jl. Nogosari No.47, RT.01/RW.23, Area Sawah,<br>
+                        Trirenggo, Kec. Bantul, Kabupaten Bantul,<br>
+                        Daerah Istimewa Yogyakarta 55714
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 bg-gray-100 rounded-xl p-5">
+                <div class="w-10 h-10 font-bold flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 flex-shrink-0">
+                    📞
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-blue-500">Telepon</h1>
+                    <p class="font-bold text-md text-pink-600">
+                        +62 822 7785 3021
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 bg-gray-100 rounded-xl p-5">
+                <div class="w-10 h-10 font-bold flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 flex-shrink-0">
+                    ✉️
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-blue-500">Email</h1>
+                    <p class="font-bold text-md text-pink-600">
+                        info@miegacoanbantul.com<br>
+                        costumer@miegacoanbantul.com
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start gap-4 bg-gray-100 rounded-xl p-5">
+                <div class="w-10 h-10 font-bold flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 flex-shrink-0">
+                    🕒
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-blue-500">Jam Operasional</h1>
+                    <p class="text-gray-600">
+                        Senin - Jumat: 10.00 - 22.00 WIB<br>
+                        Sabtu - Minggu: 09.00 - 23.00 WIB
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br>
+        </div>
+        <section class="w-full sm:w-1/2">
+            <div class="px-6">
+                <div class="border-2 rounded-xl p-12 shadow-xl m-5 space-y-4">
+                    <h2 class="text-center text-3xl font-bold text-pink-500 mb-10">
+                        Kirim Pesan
+                    </h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="font-semibold">Nama Lengkap *</label>
+                            <input
+                            type="text"
+                            class="w-full mt-2 p-4 border rounded-xl"
+                            />
+                        </div>
+                        <div>
+                            <label class="font-semibold">Email *</label>
+                            <input
+                            type="email"
+                            class="w-full mt-2 p-4 border rounded-xl"
+                            />
+                        </div>
+                        <div>
+                            <label class="font-semibold">Nomor Telepon *</label>
+                            <input
+                            type="text"
+                            class="w-full mt-2 p-4 border rounded-xl"
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-lg font-semibold mb-2">Subjek</label>
+                            <select
+                            class="w-full border-2 border-gray-300 rounded-xl px-4 py-3"
+                            >
+                            <option>Pilih Subjek</option>
+                            <option>Reservasi</option>
+                            <option>Keluhan</option>
+                            <option>Saran</option>
+                            <option>Kerjasama</option>
+                            <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-lg font-semibold mb-2">Pesan *</label>
+                            <textarea
+                            rows="4"
+                            class="w-full border-2 border-gray-300 rounded-xl px-4 py-3"
+                            ></textarea>
+                        </div>
+                    </form>
+                    <button type="submit" class="bg-[linear-gradient(to_right,#ff1d6f,#c14199,#5c7ecb,#00c6ff)] p-3 w-full rounded-full font-bold text-white">
+                        Kirim Pesan
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="bg-white py-16">
+        <h1 class="text-center text-pink-600 font-black p-10 text-4xl">
+            Lokasi Kami
+        </h1>
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-sky-50 rounded-3xl p-6 shadow-lg">
+                <div class="w-full h-[450px] rounded-2xl overflow-hidden">
+                    <iframe
+                    src="https://www.google.com/maps?q=Nogosari%20Trirenggo%20Bantul&output=embed"
+                    class="w-full h-full border-0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-16">
+        <h1 class="text-center text-pink-600 font-black p-10 text-4xl">
+            Cabang Lainnya
+        </h1>
+        <div class="flex flex-col sm:flex-row justify-between">
+            <div class="text-center space-y-6 border-2 solid rounded-xl shadow-xl m-5">
+                <img src="/img/toko.jpg" alt="" class="w-full pt-4 pl-4 pr-4">
+                <h2 class="text-xl text-center pl-2 mt-4 text-blue-500 font-bold">Jakarta Pusat</h2>
+                <p class="text-center pr-2 pl-2 pb-5 text-gray-600 ">
+                    Jl. Thamrin No. 45<br>
+                    📞 (021) 3456-7890<br>
+                    🕒 10.00 - 22.00 WIB
+                </p>
+            </div>
+            <div class="text-center space-y-6 border-2 solid rounded-xl shadow-xl m-5">
+                <img src="/img/toko.jpg" alt="" class="w-full rounded-xl pt-4 pl-4 pr-4">
+                <h2 class="text-xl text-center pl-2 mt-4 text-blue-500 font-bold">Bandung</h2>
+                <p class="text-center pr-2 pl-2 pb-5 text-gray-600">
+                    Jl. Braga No. 123<br>
+                    📞 (022) 4567-8901<br>
+                    🕒 10.00 - 22.00 WIB
+                </p>
+            </div>
+            <div class="text-center space-y-6 border-2 solid rounded-xl shadow-xl m-5">
+                <img src="/img/toko.jpg" alt="" class="w-full rounded-xl pt-4 pl-4 pr-4">
+                <h2 class="text-xl text-center pl-2 mt-4 text-blue-500 font-bold">Surabaya</h2>
+                <p class="text-center pr-2 pl-2 pb-5 text-gray-600">
+                    Jl. Pemuda No. 67 <br>
+                    📞 (031) 5678-9012 <br>
+                    🕒 10.00 - 22.00 WIB
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="p-10 0 text-center text-[40px] font-bold text-white bg-[linear-gradient(to_right,#ff1d6f,#c14199,#5c7ecb,#00c6ff)]">
+        <h1 class="text-2xl font-extrabold">Ikuti Kami</h1>
+        <p class="pt-2 font-normal text-lg">Dapatkan update terbaru tentang promo dan menu baru</p>
+        <div>
+            <button type="button" class="text-lg font-bold border border-white/40 p-3 rounded-full bg-white/30 backdrop-blur-sm shadow-lg">📘</button>
+            <button type="button" class="text-lg font-bold border border-white/40 p-3 rounded-full bg-white/30 backdrop-blur-sm shadow-lg">📷</button>
+            <button type="button" class="text-lg font-bold border border-white/40 p-3 rounded-full bg-white/30 backdrop-blur-sm shadow-lg">🐦</button>
+            <button type="button" class="text-lg font-bold border border-white/40 p-3 rounded-full bg-white/30 backdrop-blur-sm shadow-lg">🎵</button>
+            <button type="button" class="text-lg font-bold border border-white/40 p-3 rounded-full bg-white/30 backdrop-blur-sm shadow-lg">📱</button>
+        </div>
+    </div>
+    <section class="py-20 bg-white">
+        <h2 class="text-center text-4xl font-extrabold text-pink-500 mb-12">
+            Pertanyaan Umum
+        </h2>
+        
+        <div class="max-w-4xl mx-auto space-y-6 px-4">
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                <button onclick="toggleFaq(1)"
+                class="w-full flex justify-between items-center p-6 text-left">
+                <span class="text-xl font-bold text-sky-500">
+                    Apakah tersedia delivery?
+                </span>
+                <span id="icon-1" class="text-pink-500 text-2xl">−</span>
+            </button>
+            <div id="content-1" class="px-6 pb-6 text-gray-700">
+                Ya, kami menyediakan layanan delivery melalui aplikasi GoFood,
+                GrabFood, dan layanan delivery internal kami.
+                Minimum order untuk delivery adalah Rp 50.000.
+            </div>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <button onclick="toggleFaq(2)"
+            class="w-full flex justify-between items-center p-6 text-left">
+            <span class="text-xl font-bold text-sky-500">
+                Bagaimana cara reservasi tempat?
+            </span>
+            <span id="icon-2" class="text-pink-500 text-2xl">+</span>
+        </button>
+        <div id="content-2" class="hidden px-6 pb-6 text-gray-700">
+            Anda dapat melakukan reservasi melalui telepon, WhatsApp, atau langsung mengisi form kontak di website ini. Reservasi disarankan untuk grup lebih dari 6 orang.
+        </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+        <button onclick="toggleFaq(3)"
+        class="w-full flex justify-between items-center p-6 text-left">
+        <span class="text-xl font-bold text-sky-500">
+            Apakah ada menu non-pedas?
+        </span>
+        <span id="icon-3" class="text-pink-500 text-2xl">+</span>
+    </button>
+    <div id="content-3" class="hidden px-6 pb-6 text-gray-700">
+        Tentu saja! Kami menyediakan menu dengan level pedas 0 (tidak pedas) dan berbagai pilihan dimsum, minuman, serta camilan yang tidak pedas.
+    </div>
+</div>
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+    <button onclick="toggleFaq(4)"
+    class="w-full flex justify-between items-center p-6 text-left">
+    <span class="text-xl font-bold text-sky-500">
+        Apakah tersedia paket untuk acara?
+    </span>
+    <span id="icon-4" class="text-pink-500 text-2xl">+</span>
+</button>
+<div id="content-4" class="hidden px-6 pb-6 text-gray-700">
+    Ya, kami menyediakan paket catering untuk acara kantor, ulang tahun, dan gathering. Silakan hubungi kami untuk informasi lebih lanjut tentang paket yang tersedia.
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-black text-white text-center text-sm md:text-base py-10 mt-16">
+    © 2025 Mie Gacoan Bantul. Desain & Kode oleh Tim Web.
+</footer>
+<script>
+  function toggleFaq(id) {
+    const content = document.getElementById(`content-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+
+    content.classList.toggle("hidden");
+    icon.textContent = content.classList.contains("hidden") ? "+" : "−";
+  }
+</script> 
+</body>
+</html>
